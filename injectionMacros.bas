@@ -96,7 +96,6 @@ Sub AutoFillNextEmptyRow
         txtSNMassDrawn = oDialog.getControl("txtSNMassDrawn").Text
         txtSNMassAfter = oDialog.getControl("txtSNMassAfter").Text
 
-        ' Fill columns B, C, D
         oSheet.getCellByPosition(0, row).Value = txtNumber ' Column A
         oSheet.getCellByPosition(1, row).String = txtDate ' Column B
         oSheet.getCellByPosition(2, row).String = txtTime ' Column C

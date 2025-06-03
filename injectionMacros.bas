@@ -108,12 +108,6 @@ Sub AutoFillNextEmptyRow
         oSheet.getCellByPosition(8, row).Value = txtSNMassDrawn ' Column I
         oSheet.getCellByPosition(9, row).Value = txtSNMassAfter ' Column J
 
-        ' Fill formulas in K to O
-        'oSheet.getCellByPosition(10, row).Formula = "=IF((I" & (row+1) & " - J" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001 = 0; ""; (I" & (row+1) & " - J" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001)"
-        'oSheet.getCellByPosition(11, row).Formula = "=IF((I" & (row+1) & " - J" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001 * IFNA(VLOOKUP(D" & (row+1) & "; P:T; 5; 0); 0) = 0; ""; (I" & (row+1) & " - J" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001 * IFNA(VLOOKUP(D" & (row+1) & "; P:T; 5; 0); 0))"
-        'oSheet.getCellByPosition(12, row).Formula = "=IF((J" & (row+1) & " - H" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001 = 0; ""; (J" & (row+1) & " - H" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001)"
-        'oSheet.getCellByPosition(13, row).Formula = "=IF((J" & (row+1) & " - H" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001 * IFNA(VLOOKUP(D" & (row+1) & "; P:T; 5; 0); 0) = 0; ""; (J" & (row+1) & " - H" & (row+1) & ") * IFNA(VLOOKUP(D" & (row+1) & "; P:Q; 2; 0); 0) * 0,001 * IFNA(VLOOKUP(D" & (row+1) & "; P:T; 5; 0); 0))"
-        'oSheet.getCellByPosition(14, row).Formula = "=IF(N(M" & (row+1) & ") + N(K" & (row+1) & ") = 0; ""; N(M" & (row+1) & ") + N(K" & (row+1) & "))"
         
         Dim r As String : r = (row + 1)
 
